@@ -5,10 +5,10 @@ Round
 This is the Usage of this Repository
 
 
--> Resource 
-Front-end : React.js 
+📍Resource 
+✅Front-end : React.js 
         -> Redux 
         -> Saga 
         
-Back-end : Node.js + Express project
+✅Back-end : Node.js + Express project
         -> Connected by Mysql 
