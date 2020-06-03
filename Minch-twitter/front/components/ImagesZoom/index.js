@@ -1,7 +1,16 @@
-import React, { useState} from 'react';
-import PropTypes from 'prop-types';
-import Slick from 'react-slick';
-import { Overlay, Header, CloseBtn, SlickWrapper, ImgWrapper, Indicator } from './style';
+/* eslint-disable import/no-extraneous-dependencies */
+/* eslint-disable react/jsx-filename-extension */
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import Slick from "react-slick";
+import {
+  Overlay,
+  Header,
+  CloseBtn,
+  SlickWrapper,
+  ImgWrapper,
+  Indicator,
+} from "./style";
 
 const ImagesZoom = ({ images, onClose }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -9,26 +18,24 @@ const ImagesZoom = ({ images, onClose }) => {
   return (
     <Overlay>
       <Header>
-        <h1>상세 이미지</h1>
+        <h1>Details</h1>
         <CloseBtn type="close" onClick={onClose} />
       </Header>
       <SlickWrapper>
         <div>
           <Slick
             initialSlide={0}
-            afterChange={slide => setCurrentSlide(slide)}
+            afterChange={(slide) => setCurrentSlide(slide)}
             infinite={false}
             arrows
             slidesToShow={1}
             slidesToScroll={1}
           >
-            {images.map((v) => {
-              return (
-                <ImgWrapper>
-                  <img src={`http://localhost:3065/${v.src}`} />
-                </ImgWrapper>
-              );
-            })}
+            {images.map((v) => (
+              <ImgWrapper>
+                <img src={`http://localhost:3065/${v.src}`} />
+              </ImgWrapper>
+            ))}
           </Slick>
           <Indicator>
             <div>
@@ -42,9 +49,11 @@ const ImagesZoom = ({ images, onClose }) => {
 };
 
 ImagesZoom.propTypes = {
-  images: PropTypes.arrayOf(PropTypes.shape({
-    src: PropTypes.string,
-  })).isRequired,
+  images: PropTypes.arrayOf(
+    PropTypes.shape({
+      src: PropTypes.string,
+    })
+  ).isRequired,
   onClose: PropTypes.func.isRequired,
 };
 

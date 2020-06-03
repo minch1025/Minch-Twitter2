@@ -116,6 +116,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _containers_LoginForm__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../containers/LoginForm */ "./containers/LoginForm.js");
 /* harmony import */ var _containers_UserProfile__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../containers/UserProfile */ "./containers/UserProfile.js");
+/* eslint-disable react/jsx-filename-extension */
 
 
 
@@ -135,29 +136,30 @@ var AppLayout = function AppLayout(_ref) {
 
   var onSearch = function onSearch(value) {
     next_router__WEBPACK_IMPORTED_MODULE_5___default.a.push({
-      pathname: '/hashtag',
+      pathname: "/hashtag",
       query: {
         tag: value
       }
     }, "/hashtag/".concat(value));
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Menu"], {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Layout"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Menu"], {
+    theme: "dark",
     mode: "horizontal"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Menu"].Item, {
     key: "home"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "\uB178\uB4DC\uBC84\uB4DC"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Menu"].Item, {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "MinchBird"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Menu"].Item, {
     key: "profile"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "/profile"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "\uD504\uB85C\uD544"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Menu"].Item, {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", null, "Profile"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Menu"].Item, {
     key: "mail"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Input"].Search, {
     enterButton: true,
     style: {
-      verticalAlign: 'middle'
+      verticalAlign: "middle"
     },
     onSearch: onSearch
   }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Row"], {
@@ -172,10 +174,10 @@ var AppLayout = function AppLayout(_ref) {
     xs: 24,
     md: 6
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "https://www.zerocho.com"
+    href: "https://github.com/minch1025/Minch-Twitter"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     target: "_blank"
-  }, "Made by ZeroCho")))));
+  }, "Made by Mincho"))))));
 };
 
 AppLayout.propTypes = {
@@ -215,12 +217,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var LoginForm = function LoginForm() {
-  var _useInput = Object(_pages_signup__WEBPACK_IMPORTED_MODULE_5__["useInput"])(''),
+  var _useInput = Object(_pages_signup__WEBPACK_IMPORTED_MODULE_5__["useInput"])(""),
       _useInput2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useInput, 2),
       id = _useInput2[0],
       onChangeId = _useInput2[1];
 
-  var _useInput3 = Object(_pages_signup__WEBPACK_IMPORTED_MODULE_5__["useInput"])(''),
+  var _useInput3 = Object(_pages_signup__WEBPACK_IMPORTED_MODULE_5__["useInput"])(""),
       _useInput4 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useInput3, 2),
       password = _useInput4[0],
       onChangePassword = _useInput4[1];
@@ -244,18 +246,18 @@ var LoginForm = function LoginForm() {
   return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Form"], {
     onSubmit: onSubmitForm,
     style: {
-      padding: '10px'
+      padding: "10px"
     }
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
     htmlFor: "user-id"
-  }, "\uC544\uC774\uB514"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Input"], {
+  }, "ID"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Input"], {
     name: "user-id",
     value: id,
     onChange: onChangeId,
     required: true
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
     htmlFor: "user-password"
-  }, "\uBE44\uBC00\uBC88\uD638"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Input"], {
+  }, "P/W"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Input"], {
     name: "user-password",
     value: password,
     onChange: onChangePassword,
@@ -263,15 +265,15 @@ var LoginForm = function LoginForm() {
     required: true
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     style: {
-      marginTop: '10px'
+      marginTop: "10px"
     }
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Button"], {
     type: "primary",
     htmlType: "submit",
     loading: isLoggingIn
-  }, "\uB85C\uADF8\uC778"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  }, "Sign in"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
     href: "/signup"
-  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Button"], null, "\uD68C\uC6D0\uAC00\uC785")))));
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Button"], null, "Sign up")))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (LoginForm);
@@ -296,6 +298,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ "react-redux");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _reducers_user__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../reducers/user */ "./reducers/user.js");
+/* eslint-disable react/jsx-filename-extension */
 
 
 
@@ -318,19 +321,19 @@ var UserProfile = function UserProfile() {
     actions: [react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
       href: "/profile",
       key: "twit"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, "\uC9F9\uC9F9", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), me.Posts.length))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, "TwitTwit", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), me.Posts.length))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
       href: "/profile",
       key: "following"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, "\uD314\uB85C\uC789", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), me.Followings.length))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, "Following", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), me.Followings.length))), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
       href: "/profile",
       key: "follower"
-    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, "\uD314\uB85C\uC6CC", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), me.Followers.length)))]
+    }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, "Follower", react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), me.Followers.length)))]
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_0__["Card"].Meta, {
     avatar: react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_0__["Avatar"], null, me.nickname[0]),
     title: me.nickname
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_0__["Button"], {
     onClick: onLogout
-  }, "\uB85C\uADF8\uC544\uC6C3"));
+  }, "Logout"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (UserProfile);
@@ -1365,6 +1368,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+/* eslint-disable arrow-parens */
+
+/* eslint-disable indent */
+
+/* eslint-disable quotes */
+
+/* eslint-disable react/jsx-filename-extension */
+
 
 
 
@@ -1393,43 +1404,43 @@ var NodeBird = function NodeBird(_ref) {
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_app__WEBPACK_IMPORTED_MODULE_11__["Container"], null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_7__["Provider"], {
     store: store
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_helmet__WEBPACK_IMPORTED_MODULE_10___default.a, {
-    title: "NodeBird",
+    title: "MinchBird",
     htmlAttributes: {
-      lang: 'ko'
+      lang: "ko"
     },
     meta: [{
-      charset: 'UTF-8'
+      charset: "UTF-8"
     }, {
-      name: 'viewport',
-      content: 'width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes,viewport-fit=cover'
+      name: "viewport",
+      content: "width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=yes,viewport-fit=cover"
     }, {
-      'http-equiv': 'X-UA-Compatible',
-      content: 'IE=edge'
+      "http-equiv": "X-UA-Compatible",
+      content: "IE=edge"
     }, {
-      name: 'description',
-      content: '제로초의 NodeBird SNS'
+      name: "description",
+      content: "MinchBird SNS"
     }, {
-      name: 'og:title',
-      content: 'NodeBird'
+      name: "og:title",
+      content: "NodeBird"
     }, {
-      name: 'og:description',
-      content: '제로초의 NodeBird SNS'
+      name: "og:description",
+      content: "MinchBird SNS"
     }, {
-      property: 'og:type',
-      content: 'website'
+      property: "og:type",
+      content: "website"
     }],
     link: [{
-      rel: 'shortcut icon',
-      href: '/favicon.ico'
+      rel: "shortcut icon",
+      href: "/favicon.ico"
     }, {
-      rel: 'stylesheet',
-      href: 'https://cdnjs.cloudflare.com/ajax/libs/antd/3.16.2/antd.css'
+      rel: "stylesheet",
+      href: "https://cdnjs.cloudflare.com/ajax/libs/antd/3.16.2/antd.css"
     }, {
-      rel: 'stylesheet',
-      href: 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'
+      rel: "stylesheet",
+      href: "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
     }, {
-      rel: 'stylesheet',
-      href: 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css'
+      rel: "stylesheet",
+      href: "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
     }]
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_AppLayout__WEBPACK_IMPORTED_MODULE_12__["default"], null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(Component, pageProps))));
 };
@@ -1454,8 +1465,8 @@ function () {
             ctx = context.ctx, Component = context.Component;
             pageProps = {};
             state = ctx.store.getState();
-            cookie = ctx.isServer ? ctx.req.headers.cookie : '';
-            axios__WEBPACK_IMPORTED_MODULE_9___default.a.defaults.headers.Cookie = '';
+            cookie = ctx.isServer ? ctx.req.headers.cookie : "";
+            axios__WEBPACK_IMPORTED_MODULE_9___default.a.defaults.headers.Cookie = "";
 
             if (ctx.isServer && cookie) {
               axios__WEBPACK_IMPORTED_MODULE_9___default.a.defaults.headers.Cookie = cookie;
@@ -1509,7 +1520,7 @@ function () {
 var configureStore = function configureStore(initialState, options) {
   var sagaMiddleware = redux_saga__WEBPACK_IMPORTED_MODULE_8___default()();
   var middlewares = [sagaMiddleware];
-  var enhancer =  false ? undefined : Object(redux__WEBPACK_IMPORTED_MODULE_6__["compose"])(redux__WEBPACK_IMPORTED_MODULE_6__["applyMiddleware"].apply(void 0, middlewares), !options.isServer && typeof window.__REDUX_DEVTOOLS_EXTENSION__ !== 'undefined' ? window.__REDUX_DEVTOOLS_EXTENSION__() : function (f) {
+  var enhancer =  false ? undefined : Object(redux__WEBPACK_IMPORTED_MODULE_6__["compose"])(redux__WEBPACK_IMPORTED_MODULE_6__["applyMiddleware"].apply(void 0, middlewares), !options.isServer && typeof window.__REDUX_DEVTOOLS_EXTENSION__ !== "undefined" ? window.__REDUX_DEVTOOLS_EXTENSION__() : function (f) {
     return f;
   });
   var store = Object(redux__WEBPACK_IMPORTED_MODULE_6__["createStore"])(_reducers__WEBPACK_IMPORTED_MODULE_13__["default"], initialState, enhancer);
@@ -1543,6 +1554,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _reducers_user__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../reducers/user */ "./reducers/user.js");
 
 
+/* eslint-disable jsx-a11y/label-has-associated-control */
+
+/* eslint-disable react/jsx-filename-extension */
+
 
 
 
@@ -1562,7 +1577,7 @@ var useInput = function useInput() {
 };
 
 var Signup = function Signup() {
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(''),
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(""),
       _useState4 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState3, 2),
       passwordCheck = _useState4[0],
       setPasswordCheck = _useState4[1];
@@ -1582,17 +1597,17 @@ var Signup = function Signup() {
       termError = _useState10[0],
       setTermError = _useState10[1];
 
-  var _useInput = useInput(''),
+  var _useInput = useInput(""),
       _useInput2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useInput, 2),
       id = _useInput2[0],
       onChangeId = _useInput2[1];
 
-  var _useInput3 = useInput(''),
+  var _useInput3 = useInput(""),
       _useInput4 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useInput3, 2),
       nick = _useInput4[0],
       onChangeNick = _useInput4[1];
 
-  var _useInput5 = useInput(''),
+  var _useInput5 = useInput(""),
       _useInput6 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useInput5, 2),
       password = _useInput6[0],
       onChangePassword = _useInput6[1];
@@ -1607,8 +1622,8 @@ var Signup = function Signup() {
 
   Object(react__WEBPACK_IMPORTED_MODULE_1__["useEffect"])(function () {
     if (me) {
-      alert('로그인했으니 메인페이지로 이동합니다.');
-      next_router__WEBPACK_IMPORTED_MODULE_4___default.a.push('/');
+      alert("Login is finished back to main page");
+      next_router__WEBPACK_IMPORTED_MODULE_4___default.a.push("/");
     }
   }, [me && me.id]);
   var onSubmit = Object(react__WEBPACK_IMPORTED_MODULE_1__["useCallback"])(function (e) {
@@ -1651,21 +1666,21 @@ var Signup = function Signup() {
     }
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
     htmlFor: "user-id"
-  }, "\uC544\uC774\uB514"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Input"], {
+  }, "ID"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Input"], {
     name: "user-id",
     value: id,
     required: true,
     onChange: onChangeId
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
     htmlFor: "user-nick"
-  }, "\uB2C9\uB124\uC784"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Input"], {
+  }, "Nickname"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Input"], {
     name: "user-nick",
     value: nick,
     required: true,
     onChange: onChangeNick
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
     htmlFor: "user-password"
-  }, "\uBE44\uBC00\uBC88\uD638"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Input"], {
+  }, "Password"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Input"], {
     name: "user-password",
     type: "password",
     value: password,
@@ -1673,7 +1688,7 @@ var Signup = function Signup() {
     onChange: onChangePassword
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("label", {
     htmlFor: "user-password-check"
-  }, "\uBE44\uBC00\uBC88\uD638\uCCB4\uD06C"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Input"], {
+  }, "PasswordCheck"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Input"], {
     name: "user-password-check",
     type: "password",
     value: passwordCheck,
@@ -1681,17 +1696,17 @@ var Signup = function Signup() {
     onChange: onChangePasswordCheck
   }), passwordError && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     style: {
-      color: 'red'
+      color: "red"
     }
-  }, "\uBE44\uBC00\uBC88\uD638\uAC00 \uC77C\uCE58\uD558\uC9C0 \uC54A\uC2B5\uB2C8\uB2E4.")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Checkbox"], {
+  }, "Password is not correct")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_2__["Checkbox"], {
     name: "user-term",
     checked: term,
     onChange: onChangeTerm
-  }, "\uC81C\uB85C\uCD08 \uB9D0\uC744 \uC798 \uB4E4\uC744 \uAC83\uC744 \uB3D9\uC758\uD569\uB2C8\uB2E4."), termError && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }, "Agree"), termError && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     style: {
-      color: 'red'
+      color: "red"
     }
-  }, "\uC57D\uAD00\uC5D0 \uB3D9\uC758\uD558\uC154\uC57C \uD569\uB2C8\uB2E4.")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
+  }, "Need to check contract")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     style: {
       marginTop: 10
     }
@@ -1699,7 +1714,7 @@ var Signup = function Signup() {
     type: "primary",
     htmlType: "submit",
     loading: isSigningUp
-  }, "\uAC00\uC785\uD558\uAE30"))));
+  }, "Sign up"))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Signup);
@@ -2099,67 +2114,66 @@ __webpack_require__.r(__webpack_exports__);
 
 var initialState = {
   isLoggingOut: false,
-  // 로그아웃 시도중
+  // Logout is on going
   isLoggingIn: false,
-  // 로그인 시도중
-  logInErrorReason: '',
-  // 로그인 실패 사유
+  // Logging
+  logInErrorReason: "",
+  // Failed Reason of Login
   isSignedUp: false,
-  // 회원가입 성공
+  // Successs Sign up
   isSigningUp: false,
-  // 회원가입 시도중
-  signUpErrorReason: '',
-  // 회원가입 실패 사유
+  // Sign up checking
+  signUpErrorReason: "",
+  // Failed Reason of Sign up
   me: null,
-  // 내 정보
+  // My info
   followingList: [],
-  // 팔로잉 리스트
+  // Folllowing list
   followerList: [],
-  // 팔로워 리스트
+  // Follower list
   userInfo: null,
-  // 남의 정보
+  // User Info
   isEditingNickname: false,
-  // 이름 변경 중
-  editNicknameErrorReason: '',
-  // 이름 변경 실패 사유
+  // Change Name
+  editNicknameErrorReason: "",
+  // failed of Change name
   hasMoreFollower: false,
   hasMoreFollowing: false
-};
-var SIGN_UP_REQUEST = 'SIGN_UP_REQUEST';
-var SIGN_UP_SUCCESS = 'SIGN_UP_SUCCESS';
-var SIGN_UP_FAILURE = 'SIGN_UP_FAILURE';
-var LOG_IN_REQUEST = 'LOG_IN_REQUEST'; // 액션의 이름
+}; // draft == Immutable
 
-var LOG_IN_SUCCESS = 'LOG_IN_SUCCESS'; // 액션의 이름
+var SIGN_UP_REQUEST = "SIGN_UP_REQUEST";
+var SIGN_UP_SUCCESS = "SIGN_UP_SUCCESS";
+var SIGN_UP_FAILURE = "SIGN_UP_FAILURE";
+var LOG_IN_REQUEST = "LOG_IN_REQUEST"; // Action name
 
-var LOG_IN_FAILURE = 'LOG_IN_FAILURE'; // 액션의 이름
-
-var LOAD_USER_REQUEST = 'LOAD_USER_REQUEST';
-var LOAD_USER_SUCCESS = 'LOAD_USER_SUCCESS';
-var LOAD_USER_FAILURE = 'LOAD_USER_FAILURE';
-var LOG_OUT_REQUEST = 'LOG_OUT_REQUEST';
-var LOG_OUT_SUCCESS = 'LOG_OUT_SUCCESS';
-var LOG_OUT_FAILURE = 'LOG_OUT_FAILURE';
-var LOAD_FOLLOWERS_REQUEST = 'LOAD_FOLLOWERS_REQUEST';
-var LOAD_FOLLOWERS_SUCCESS = 'LOAD_FOLLOWERS_SUCCESS';
-var LOAD_FOLLOWERS_FAILURE = 'LOAD_FOLLOWERS_FAILURE';
-var LOAD_FOLLOWINGS_REQUEST = 'LOAD_FOLLOWINGS_REQUEST';
-var LOAD_FOLLOWINGS_SUCCESS = 'LOAD_FOLLOWINGS_SUCCESS';
-var LOAD_FOLLOWINGS_FAILURE = 'LOAD_FOLLOWINGS_FAILURE';
-var FOLLOW_USER_REQUEST = 'FOLLOW_USER_REQUEST';
-var FOLLOW_USER_SUCCESS = 'FOLLOW_USER_SUCCESS';
-var FOLLOW_USER_FAILURE = 'FOLLOW_USER_FAILURE';
-var UNFOLLOW_USER_REQUEST = 'UNFOLLOW_USER_REQUEST';
-var UNFOLLOW_USER_SUCCESS = 'UNFOLLOW_USER_SUCCESS';
-var UNFOLLOW_USER_FAILURE = 'UNFOLLOW_USER_FAILURE';
-var REMOVE_FOLLOWER_REQUEST = 'REMOVE_FOLLOWER_REQUEST';
-var REMOVE_FOLLOWER_SUCCESS = 'REMOVE_FOLLOWER_SUCCESS';
-var REMOVE_FOLLOWER_FAILURE = 'REMOVE_FOLLOWER_FAILURE';
-var EDIT_NICKNAME_REQUEST = 'EDIT_NICKNAME_REQUEST';
-var EDIT_NICKNAME_SUCCESS = 'EDIT_NICKNAME_SUCCESS';
-var EDIT_NICKNAME_FAILURE = 'EDIT_NICKNAME_FAILURE';
-var ADD_POST_TO_ME = 'ADD_POST_TO_ME';
-var REMOVE_POST_OF_ME = 'REMOVE_POST_OF_ME';
+var LOG_IN_SUCCESS = "LOG_IN_SUCCESS";
+var LOG_IN_FAILURE = "LOG_IN_FAILURE";
+var LOAD_USER_REQUEST = "LOAD_USER_REQUEST";
+var LOAD_USER_SUCCESS = "LOAD_USER_SUCCESS";
+var LOAD_USER_FAILURE = "LOAD_USER_FAILURE";
+var LOG_OUT_REQUEST = "LOG_OUT_REQUEST";
+var LOG_OUT_SUCCESS = "LOG_OUT_SUCCESS";
+var LOG_OUT_FAILURE = "LOG_OUT_FAILURE";
+var LOAD_FOLLOWERS_REQUEST = "LOAD_FOLLOWERS_REQUEST";
+var LOAD_FOLLOWERS_SUCCESS = "LOAD_FOLLOWERS_SUCCESS";
+var LOAD_FOLLOWERS_FAILURE = "LOAD_FOLLOWERS_FAILURE";
+var LOAD_FOLLOWINGS_REQUEST = "LOAD_FOLLOWINGS_REQUEST";
+var LOAD_FOLLOWINGS_SUCCESS = "LOAD_FOLLOWINGS_SUCCESS";
+var LOAD_FOLLOWINGS_FAILURE = "LOAD_FOLLOWINGS_FAILURE";
+var FOLLOW_USER_REQUEST = "FOLLOW_USER_REQUEST";
+var FOLLOW_USER_SUCCESS = "FOLLOW_USER_SUCCESS";
+var FOLLOW_USER_FAILURE = "FOLLOW_USER_FAILURE";
+var UNFOLLOW_USER_REQUEST = "UNFOLLOW_USER_REQUEST";
+var UNFOLLOW_USER_SUCCESS = "UNFOLLOW_USER_SUCCESS";
+var UNFOLLOW_USER_FAILURE = "UNFOLLOW_USER_FAILURE";
+var REMOVE_FOLLOWER_REQUEST = "REMOVE_FOLLOWER_REQUEST";
+var REMOVE_FOLLOWER_SUCCESS = "REMOVE_FOLLOWER_SUCCESS";
+var REMOVE_FOLLOWER_FAILURE = "REMOVE_FOLLOWER_FAILURE";
+var EDIT_NICKNAME_REQUEST = "EDIT_NICKNAME_REQUEST";
+var EDIT_NICKNAME_SUCCESS = "EDIT_NICKNAME_SUCCESS";
+var EDIT_NICKNAME_FAILURE = "EDIT_NICKNAME_FAILURE";
+var ADD_POST_TO_ME = "ADD_POST_TO_ME";
+var REMOVE_POST_OF_ME = "REMOVE_POST_OF_ME";
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
   var action = arguments.length > 1 ? arguments[1] : undefined;
@@ -2168,14 +2182,14 @@ var REMOVE_POST_OF_ME = 'REMOVE_POST_OF_ME';
       case LOG_IN_REQUEST:
         {
           draft.isLoggingIn = true;
-          draft.logInErrorReason = '';
+          draft.logInErrorReason = "";
           break;
         }
 
       case LOG_IN_SUCCESS:
         {
           draft.isLoggingIn = false;
-          draft.logInErrorReason = '';
+          draft.logInErrorReason = "";
           draft.me = action.data;
           break;
         }
@@ -2205,7 +2219,7 @@ var REMOVE_POST_OF_ME = 'REMOVE_POST_OF_ME';
         {
           draft.isSignedUp = false;
           draft.isSigningUp = true;
-          draft.signUpErrorReason = '';
+          draft.signUpErrorReason = "";
           break;
         }
 
@@ -2376,7 +2390,7 @@ var REMOVE_POST_OF_ME = 'REMOVE_POST_OF_ME';
       case EDIT_NICKNAME_REQUEST:
         {
           draft.isEditingNickname = true;
-          draft.editNicknameErrorReason = '';
+          draft.editNicknameErrorReason = "";
           break;
         }
 

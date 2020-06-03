@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -112,6 +112,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./style */ "./components/ImagesZoom/style.js");
 
 
+/* eslint-disable import/no-extraneous-dependencies */
+
+/* eslint-disable react/jsx-filename-extension */
+
 
 
 
@@ -125,7 +129,7 @@ var ImagesZoom = function ImagesZoom(_ref) {
       currentSlide = _useState2[0],
       setCurrentSlide = _useState2[1];
 
-  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_4__["Overlay"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_4__["Header"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", null, "\uC0C1\uC138 \uC774\uBBF8\uC9C0"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_4__["CloseBtn"], {
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_4__["Overlay"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_4__["Header"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h1", null, "Details"), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_4__["CloseBtn"], {
     type: "close",
     onClick: onClose
   })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_style__WEBPACK_IMPORTED_MODULE_4__["SlickWrapper"], null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_slick__WEBPACK_IMPORTED_MODULE_3___default.a, {
@@ -312,6 +316,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ImagesZoom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ImagesZoom */ "./components/ImagesZoom/index.js");
 
 
+/* eslint-disable react/jsx-filename-extension */
+
 
 
 
@@ -362,15 +368,15 @@ var PostImages = function PostImages(_ref) {
     onClick: onZoom
   }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     style: {
-      display: 'inline-block',
-      width: '50%',
-      textAlign: 'center',
-      verticalAlign: 'middle'
+      display: "inline-block",
+      width: "50%",
+      textAlign: "center",
+      verticalAlign: "middle"
     },
     onClick: onZoom
   }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Icon"], {
     type: "plus"
-  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), images.length - 1, "\uAC1C\uC758 \uC0AC\uC9C4 \uB354\uBCF4\uAE30")), showImagesZoom && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ImagesZoom__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("br", null), images.length - 1, "More")), showImagesZoom && react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_ImagesZoom__WEBPACK_IMPORTED_MODULE_4__["default"], {
     images: images,
     onClose: onClose
   }));
@@ -409,7 +415,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var NicknameEditForm = function NicknameEditForm() {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(''),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(""),
       _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 2),
       editedName = _useState2[0],
       setEditedName = _useState2[1];
@@ -434,20 +440,20 @@ var NicknameEditForm = function NicknameEditForm() {
   }, [editedName]);
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_1__["Form"], {
     style: {
-      marginBottom: '20px',
-      border: '1px solid #d9d9d9',
-      padding: '20px'
+      marginBottom: "20px",
+      border: "1px solid #d9d9d9",
+      padding: "20px"
     },
     onSubmit: onEditNickname
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_1__["Input"], {
-    addonBefore: "\uB2C9\uB124\uC784",
+    addonBefore: "Nickname",
     value: editedName || me && me.nickname,
     onChange: onChangeNickname
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_1__["Button"], {
     type: "primary",
     htmlType: "submit",
     loading: isEditingNickname
-  }, "\uC218\uC815"));
+  }, "Edit"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (NicknameEditForm);
@@ -494,6 +500,13 @@ function _templateObject() {
   return data;
 }
 
+/* eslint-disable arrow-parens */
+
+/* eslint-disable react/jsx-filename-extension */
+
+/* eslint-disable operator-linebreak */
+
+/* eslint-disable react/jsx-wrap-multilines */
 
 
 
@@ -514,7 +527,7 @@ var PostCard = function PostCard(_ref) {
       commentFormOpened = _useState2[0],
       setCommentFormOpened = _useState2[1];
 
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(''),
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(""),
       _useState4 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState3, 2),
       commentText = _useState4[0],
       setCommentText = _useState4[1];
@@ -550,7 +563,7 @@ var PostCard = function PostCard(_ref) {
     e.preventDefault();
 
     if (!me) {
-      return alert('로그인이 필요합니다.');
+      return alert("로그인이 필요합니다.");
     }
 
     return dispatch({
@@ -562,24 +575,24 @@ var PostCard = function PostCard(_ref) {
     });
   }, [me && me.id, commentText]);
   Object(react__WEBPACK_IMPORTED_MODULE_2__["useEffect"])(function () {
-    setCommentText('');
+    setCommentText("");
   }, [commentAdded === true]);
   var onChangeCommentText = Object(react__WEBPACK_IMPORTED_MODULE_2__["useCallback"])(function (e) {
     setCommentText(e.target.value);
   }, []);
   var onToggleLike = Object(react__WEBPACK_IMPORTED_MODULE_2__["useCallback"])(function () {
     if (!me) {
-      return alert('로그인이 필요합니다!');
+      return alert("Need Login!");
     }
 
     if (liked) {
-      // 좋아요 누른 상태
+      // allow 'Like'
       dispatch({
         type: _reducers_post__WEBPACK_IMPORTED_MODULE_8__["UNLIKE_POST_REQUEST"],
         data: post.id
       });
     } else {
-      // 좋아요 안 누른 상태
+      // unallow 'Like'
       dispatch({
         type: _reducers_post__WEBPACK_IMPORTED_MODULE_8__["LIKE_POST_REQUEST"],
         data: post.id
@@ -588,7 +601,7 @@ var PostCard = function PostCard(_ref) {
   }, [me && me.id, post && post.id, liked]);
   var onRetweet = Object(react__WEBPACK_IMPORTED_MODULE_2__["useCallback"])(function () {
     if (!me) {
-      return alert('로그인이 필요합니다.');
+      return alert("Need Login.");
     }
 
     return dispatch({
@@ -631,7 +644,7 @@ var PostCard = function PostCard(_ref) {
     }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Icon"], {
       type: "heart",
       key: "heart",
-      theme: liked ? 'twoTone' : 'outlined',
+      theme: liked ? "twoTone" : "outlined",
       twoToneColor: "#eb2f96",
       onClick: onToggleLike
     }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Icon"], {
@@ -640,21 +653,21 @@ var PostCard = function PostCard(_ref) {
       onClick: onToggleComment
     }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Popover"], {
       key: "ellipsis",
-      content: react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Button"].Group, null, me && post.UserId === me.id ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Button"], null, "\uC218\uC815"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Button"], {
+      content: react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Button"].Group, null, me && post.UserId === me.id ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_2___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Button"], null, "Edit"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Button"], {
         type: "danger",
         onClick: onRemovePost(post.id)
-      }, "\uC0AD\uC81C")) : react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Button"], null, "\uC2E0\uACE0"))
+      }, "Delete")) : react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Button"], null, "RedCard"))
     }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Icon"], {
       type: "ellipsis"
     }))],
-    title: post.RetweetId ? "".concat(post.User.nickname, "\uB2D8\uC774 \uB9AC\uD2B8\uC717\uD558\uC168\uC2B5\uB2C8\uB2E4.") : null,
+    title: post.RetweetId ? "".concat(post.User.nickname, " Retweeted.") : null,
     extra: !me || post.User.id === me.id ? null : me.Followings && me.Followings.find(function (v) {
       return v.id === post.User.id;
     }) ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Button"], {
       onClick: onUnfollow(post.User.id)
-    }, "\uC5B8\uD314\uB85C\uC6B0") : react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Button"], {
+    }, "Unfollow") : react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Button"], {
       onClick: onFollow(post.User.id)
-    }, "\uD314\uB85C\uC6B0")
+    }, "Follow")
   }, post.RetweetId && post.Retweet ? react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Card"], {
     cover: post.Retweet.Images[0] && react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_PostImages__WEBPACK_IMPORTED_MODULE_9__["default"], {
       images: post.Retweet.Images
@@ -662,7 +675,7 @@ var PostCard = function PostCard(_ref) {
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Card"].Meta, {
     avatar: react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
       href: {
-        pathname: '/user',
+        pathname: "/user",
         query: {
           id: post.Retweet.User.id
         }
@@ -677,7 +690,7 @@ var PostCard = function PostCard(_ref) {
   })) : react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Card"].Meta, {
     avatar: react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
       href: {
-        pathname: '/user',
+        pathname: "/user",
         query: {
           id: post.User.id
         }
@@ -699,8 +712,8 @@ var PostCard = function PostCard(_ref) {
     type: "primary",
     htmlType: "submit",
     loading: isAddingComment
-  }, "\uC090\uC57D")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["List"], {
-    header: "".concat(post.Comments ? post.Comments.length : 0, " \uB313\uAE00"),
+  }, "Likey!")), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["List"], {
+    header: "".concat(post.Comments ? post.Comments.length : 0, " Comment"),
     itemLayout: "horizontal",
     dataSource: post.Comments || [],
     renderItem: function renderItem(item) {
@@ -708,7 +721,7 @@ var PostCard = function PostCard(_ref) {
         author: item.User.nickname,
         avatar: react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_4___default.a, {
           href: {
-            pathname: '/user',
+            pathname: "/user",
             query: {
               id: item.User.id
             }
@@ -1558,6 +1571,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+/* eslint-disable arrow-parens */
+
+/* eslint-disable react/jsx-filename-extension */
+
 
 
 
@@ -1611,7 +1628,7 @@ var Profile = function Profile() {
   }, [followerList.length]);
   return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_containers_NicknameEditForm__WEBPACK_IMPORTED_MODULE_5__["default"], null), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["List"], {
     style: {
-      marginBottom: '20px'
+      marginBottom: "20px"
     },
     grid: {
       gutter: 4,
@@ -1619,19 +1636,19 @@ var Profile = function Profile() {
       md: 3
     },
     size: "small",
-    header: react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, "\uD314\uB85C\uC789 \uBAA9\uB85D"),
+    header: react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, "Following list"),
     loadMore: hasMoreFollowing && react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Button"], {
       style: {
-        width: '100%'
+        width: "100%"
       },
       onClick: loadMoreFollowings
-    }, "\uB354 \uBCF4\uAE30"),
+    }, "More"),
     bordered: true,
     dataSource: followingList,
     renderItem: function renderItem(item) {
       return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["List"].Item, {
         style: {
-          marginTop: '20px'
+          marginTop: "20px"
         }
       }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Card"], {
         actions: [react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Icon"], {
@@ -1645,7 +1662,7 @@ var Profile = function Profile() {
     }
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["List"], {
     style: {
-      marginBottom: '20px'
+      marginBottom: "20px"
     },
     grid: {
       gutter: 4,
@@ -1653,19 +1670,19 @@ var Profile = function Profile() {
       md: 3
     },
     size: "small",
-    header: react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, "\uD314\uB85C\uC6CC \uBAA9\uB85D"),
+    header: react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, "Follower list"),
     loadMore: hasMoreFollower && react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Button"], {
       style: {
-        width: '100%'
+        width: "100%"
       },
       onClick: loadMoreFollowers
-    }, "\uB354 \uBCF4\uAE30"),
+    }, "More"),
     bordered: true,
     dataSource: followerList,
     renderItem: function renderItem(item) {
       return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["List"].Item, {
         style: {
-          marginTop: '20px'
+          marginTop: "20px"
         }
       }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Card"], {
         actions: [react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(antd__WEBPACK_IMPORTED_MODULE_3__["Icon"], {
@@ -1696,7 +1713,7 @@ function () {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
-            state = context.store.getState(); // 이 직전에 LOAD_USERS_REQUEST
+            state = context.store.getState(); // Timing of LOAD_USERS_REQUEST
 
             context.store.dispatch({
               type: _reducers_user__WEBPACK_IMPORTED_MODULE_6__["LOAD_FOLLOWERS_REQUEST"],
@@ -1709,7 +1726,7 @@ function () {
             context.store.dispatch({
               type: _reducers_post__WEBPACK_IMPORTED_MODULE_7__["LOAD_USER_POSTS_REQUEST"],
               data: state.user.me && state.user.me.id
-            }); // 이 쯤에서 LOAD_USERS_SUCCESS 돼서 me가 생김.
+            }); // Timing of LOAD_USERS_SUCCESS  "me" is created
 
           case 4:
           case "end":
@@ -2097,67 +2114,66 @@ __webpack_require__.r(__webpack_exports__);
 
 var initialState = {
   isLoggingOut: false,
-  // 로그아웃 시도중
+  // Logout is on going
   isLoggingIn: false,
-  // 로그인 시도중
-  logInErrorReason: '',
-  // 로그인 실패 사유
+  // Logging
+  logInErrorReason: "",
+  // Failed Reason of Login
   isSignedUp: false,
-  // 회원가입 성공
+  // Successs Sign up
   isSigningUp: false,
-  // 회원가입 시도중
-  signUpErrorReason: '',
-  // 회원가입 실패 사유
+  // Sign up checking
+  signUpErrorReason: "",
+  // Failed Reason of Sign up
   me: null,
-  // 내 정보
+  // My info
   followingList: [],
-  // 팔로잉 리스트
+  // Folllowing list
   followerList: [],
-  // 팔로워 리스트
+  // Follower list
   userInfo: null,
-  // 남의 정보
+  // User Info
   isEditingNickname: false,
-  // 이름 변경 중
-  editNicknameErrorReason: '',
-  // 이름 변경 실패 사유
+  // Change Name
+  editNicknameErrorReason: "",
+  // failed of Change name
   hasMoreFollower: false,
   hasMoreFollowing: false
-};
-var SIGN_UP_REQUEST = 'SIGN_UP_REQUEST';
-var SIGN_UP_SUCCESS = 'SIGN_UP_SUCCESS';
-var SIGN_UP_FAILURE = 'SIGN_UP_FAILURE';
-var LOG_IN_REQUEST = 'LOG_IN_REQUEST'; // 액션의 이름
+}; // draft == Immutable
 
-var LOG_IN_SUCCESS = 'LOG_IN_SUCCESS'; // 액션의 이름
+var SIGN_UP_REQUEST = "SIGN_UP_REQUEST";
+var SIGN_UP_SUCCESS = "SIGN_UP_SUCCESS";
+var SIGN_UP_FAILURE = "SIGN_UP_FAILURE";
+var LOG_IN_REQUEST = "LOG_IN_REQUEST"; // Action name
 
-var LOG_IN_FAILURE = 'LOG_IN_FAILURE'; // 액션의 이름
-
-var LOAD_USER_REQUEST = 'LOAD_USER_REQUEST';
-var LOAD_USER_SUCCESS = 'LOAD_USER_SUCCESS';
-var LOAD_USER_FAILURE = 'LOAD_USER_FAILURE';
-var LOG_OUT_REQUEST = 'LOG_OUT_REQUEST';
-var LOG_OUT_SUCCESS = 'LOG_OUT_SUCCESS';
-var LOG_OUT_FAILURE = 'LOG_OUT_FAILURE';
-var LOAD_FOLLOWERS_REQUEST = 'LOAD_FOLLOWERS_REQUEST';
-var LOAD_FOLLOWERS_SUCCESS = 'LOAD_FOLLOWERS_SUCCESS';
-var LOAD_FOLLOWERS_FAILURE = 'LOAD_FOLLOWERS_FAILURE';
-var LOAD_FOLLOWINGS_REQUEST = 'LOAD_FOLLOWINGS_REQUEST';
-var LOAD_FOLLOWINGS_SUCCESS = 'LOAD_FOLLOWINGS_SUCCESS';
-var LOAD_FOLLOWINGS_FAILURE = 'LOAD_FOLLOWINGS_FAILURE';
-var FOLLOW_USER_REQUEST = 'FOLLOW_USER_REQUEST';
-var FOLLOW_USER_SUCCESS = 'FOLLOW_USER_SUCCESS';
-var FOLLOW_USER_FAILURE = 'FOLLOW_USER_FAILURE';
-var UNFOLLOW_USER_REQUEST = 'UNFOLLOW_USER_REQUEST';
-var UNFOLLOW_USER_SUCCESS = 'UNFOLLOW_USER_SUCCESS';
-var UNFOLLOW_USER_FAILURE = 'UNFOLLOW_USER_FAILURE';
-var REMOVE_FOLLOWER_REQUEST = 'REMOVE_FOLLOWER_REQUEST';
-var REMOVE_FOLLOWER_SUCCESS = 'REMOVE_FOLLOWER_SUCCESS';
-var REMOVE_FOLLOWER_FAILURE = 'REMOVE_FOLLOWER_FAILURE';
-var EDIT_NICKNAME_REQUEST = 'EDIT_NICKNAME_REQUEST';
-var EDIT_NICKNAME_SUCCESS = 'EDIT_NICKNAME_SUCCESS';
-var EDIT_NICKNAME_FAILURE = 'EDIT_NICKNAME_FAILURE';
-var ADD_POST_TO_ME = 'ADD_POST_TO_ME';
-var REMOVE_POST_OF_ME = 'REMOVE_POST_OF_ME';
+var LOG_IN_SUCCESS = "LOG_IN_SUCCESS";
+var LOG_IN_FAILURE = "LOG_IN_FAILURE";
+var LOAD_USER_REQUEST = "LOAD_USER_REQUEST";
+var LOAD_USER_SUCCESS = "LOAD_USER_SUCCESS";
+var LOAD_USER_FAILURE = "LOAD_USER_FAILURE";
+var LOG_OUT_REQUEST = "LOG_OUT_REQUEST";
+var LOG_OUT_SUCCESS = "LOG_OUT_SUCCESS";
+var LOG_OUT_FAILURE = "LOG_OUT_FAILURE";
+var LOAD_FOLLOWERS_REQUEST = "LOAD_FOLLOWERS_REQUEST";
+var LOAD_FOLLOWERS_SUCCESS = "LOAD_FOLLOWERS_SUCCESS";
+var LOAD_FOLLOWERS_FAILURE = "LOAD_FOLLOWERS_FAILURE";
+var LOAD_FOLLOWINGS_REQUEST = "LOAD_FOLLOWINGS_REQUEST";
+var LOAD_FOLLOWINGS_SUCCESS = "LOAD_FOLLOWINGS_SUCCESS";
+var LOAD_FOLLOWINGS_FAILURE = "LOAD_FOLLOWINGS_FAILURE";
+var FOLLOW_USER_REQUEST = "FOLLOW_USER_REQUEST";
+var FOLLOW_USER_SUCCESS = "FOLLOW_USER_SUCCESS";
+var FOLLOW_USER_FAILURE = "FOLLOW_USER_FAILURE";
+var UNFOLLOW_USER_REQUEST = "UNFOLLOW_USER_REQUEST";
+var UNFOLLOW_USER_SUCCESS = "UNFOLLOW_USER_SUCCESS";
+var UNFOLLOW_USER_FAILURE = "UNFOLLOW_USER_FAILURE";
+var REMOVE_FOLLOWER_REQUEST = "REMOVE_FOLLOWER_REQUEST";
+var REMOVE_FOLLOWER_SUCCESS = "REMOVE_FOLLOWER_SUCCESS";
+var REMOVE_FOLLOWER_FAILURE = "REMOVE_FOLLOWER_FAILURE";
+var EDIT_NICKNAME_REQUEST = "EDIT_NICKNAME_REQUEST";
+var EDIT_NICKNAME_SUCCESS = "EDIT_NICKNAME_SUCCESS";
+var EDIT_NICKNAME_FAILURE = "EDIT_NICKNAME_FAILURE";
+var ADD_POST_TO_ME = "ADD_POST_TO_ME";
+var REMOVE_POST_OF_ME = "REMOVE_POST_OF_ME";
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : initialState;
   var action = arguments.length > 1 ? arguments[1] : undefined;
@@ -2166,14 +2182,14 @@ var REMOVE_POST_OF_ME = 'REMOVE_POST_OF_ME';
       case LOG_IN_REQUEST:
         {
           draft.isLoggingIn = true;
-          draft.logInErrorReason = '';
+          draft.logInErrorReason = "";
           break;
         }
 
       case LOG_IN_SUCCESS:
         {
           draft.isLoggingIn = false;
-          draft.logInErrorReason = '';
+          draft.logInErrorReason = "";
           draft.me = action.data;
           break;
         }
@@ -2203,7 +2219,7 @@ var REMOVE_POST_OF_ME = 'REMOVE_POST_OF_ME';
         {
           draft.isSignedUp = false;
           draft.isSigningUp = true;
-          draft.signUpErrorReason = '';
+          draft.signUpErrorReason = "";
           break;
         }
 
@@ -2374,7 +2390,7 @@ var REMOVE_POST_OF_ME = 'REMOVE_POST_OF_ME';
       case EDIT_NICKNAME_REQUEST:
         {
           draft.isEditingNickname = true;
-          draft.editNicknameErrorReason = '';
+          draft.editNicknameErrorReason = "";
           break;
         }
 
@@ -2402,7 +2418,7 @@ var REMOVE_POST_OF_ME = 'REMOVE_POST_OF_ME';
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!********************************!*\
   !*** multi ./pages/profile.js ***!
   \********************************/

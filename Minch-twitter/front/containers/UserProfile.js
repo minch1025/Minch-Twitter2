@@ -1,11 +1,12 @@
-import { Avatar, Button, Card } from 'antd';
-import React, { useCallback } from 'react';
-import Link from 'next/link';
-import { useDispatch, useSelector } from 'react-redux';
-import { LOG_OUT_REQUEST } from '../reducers/user';
+/* eslint-disable react/jsx-filename-extension */
+import { Avatar, Button, Card } from "antd";
+import React, { useCallback } from "react";
+import Link from "next/link";
+import { useDispatch, useSelector } from "react-redux";
+import { LOG_OUT_REQUEST } from "../reducers/user";
 
 const UserProfile = () => {
-  const { me } = useSelector(state => state.user);
+  const { me } = useSelector((state) => state.user);
   const dispatch = useDispatch();
 
   const onLogout = useCallback(() => {
@@ -19,17 +20,29 @@ const UserProfile = () => {
       actions={[
         <Link href="/profile" key="twit">
           <a>
-            <div>짹짹<br />{me.Posts.length}</div>
+            <div>
+              TwitTwit
+              <br />
+              {me.Posts.length}
+            </div>
           </a>
         </Link>,
         <Link href="/profile" key="following">
           <a>
-            <div>팔로잉<br />{me.Followings.length}</div>
+            <div>
+              Following
+              <br />
+              {me.Followings.length}
+            </div>
           </a>
         </Link>,
         <Link href="/profile" key="follower">
           <a>
-            <div>팔로워<br />{me.Followers.length}</div>
+            <div>
+              Follower
+              <br />
+              {me.Followers.length}
+            </div>
           </a>
         </Link>,
       ]}
@@ -38,7 +51,7 @@ const UserProfile = () => {
         avatar={<Avatar>{me.nickname[0]}</Avatar>}
         title={me.nickname}
       />
-      <Button onClick={onLogout}>로그아웃</Button>
+      <Button onClick={onLogout}>Logout</Button>
     </Card>
   );
 };
